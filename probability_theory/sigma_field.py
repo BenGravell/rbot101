@@ -38,3 +38,7 @@ for event in events:
 # Verify the null and certain events are in the sigma field
 for event in [emptyset, sample_space]:
     assert event in sigma_field
+
+# Print the entire sigma field
+for event in sigma_field:
+    print(event)

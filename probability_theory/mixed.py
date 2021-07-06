@@ -32,7 +32,7 @@ pdf_list = [cont_pdf, disc_pdf, mixd_pdf]
 label_list = ['Continuous', 'Discrete', 'Mixed']
 
 plt_reset()
-figsize = (4, 2)
+figsize = (4.25, 2)
 for pdf, label in zip(pdf_list, label_list):
     plt.figure(figsize=figsize)
     cdf = np.cumsum(pdf*np.diff(x, prepend=x[0]))
