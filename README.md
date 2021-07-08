@@ -1,6 +1,5 @@
 # rbot101
-
-# Files to help teach the mathematical foundations of robotics
+Files to help teach the mathematical foundations of robotics
  
 ## Instructions for Google Colab notebooks
 
