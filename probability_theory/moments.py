@@ -31,7 +31,6 @@ fig.legend()
 fig.tight_layout()
 savefig('moment2_comparison.pdf')
 
-
 # Skewness
 fig, ax = plt.subplots(figsize=figsize)
 alphas = [8.0, -8.0]

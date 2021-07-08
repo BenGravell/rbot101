@@ -67,7 +67,6 @@ cols = int(np.ceil(nplot/rows))
 subp_h = 10/rows
 subp_w = 0.9*subp_h  # 10 corresponds to the figure width in inches
 
-
 # Create pandas grid of histograms
 axs = df.hist(density=True, bins=15, grid=False, edgecolor='w',
               linewidth=0.5, legend=False, alpha=0.8,

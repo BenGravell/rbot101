@@ -28,11 +28,10 @@ cont_pdf = gaussian_pdf(x)
 disc_pdf = discrete_pdf(x)
 mixd_pdf = np.concatenate([gaussian_pdf(x[0:m]), discrete_pdf(x[m:])])
 
-pdf_list = [cont_pdf, disc_pdf, mixd_pdf]
-label_list = ['Continuous', 'Discrete', 'Mixed']
-
 plt_reset()
 figsize = (4.25, 2)
+pdf_list = [cont_pdf, disc_pdf, mixd_pdf]
+label_list = ['Continuous', 'Discrete', 'Mixed']
 for pdf, label in zip(pdf_list, label_list):
     plt.figure(figsize=figsize)
     cdf = np.cumsum(pdf*np.diff(x, prepend=x[0]))
