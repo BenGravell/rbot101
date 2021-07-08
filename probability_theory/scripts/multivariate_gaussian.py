@@ -2,6 +2,8 @@ import numpy as np
 import numpy.linalg as la
 import numpy.random as npr
 import matplotlib.pyplot as plt
+import sys
+sys.path.insert(0, '../')
 from utility import savefig, plt_reset
 
 
@@ -40,3 +42,4 @@ for k in range(num_dists):
     ax[k].contourf(X, Y, Z, levels=10, cmap='Blues')
 fig.tight_layout()
 savefig('multivariate_gaussian.pdf')
+plt.show()

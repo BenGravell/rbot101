@@ -4,6 +4,9 @@
 import numpy as np
 from scipy import stats
 import pandas as pd
+import matplotlib.pyplot as plt
+import sys
+sys.path.insert(0, '../')
 from utility import savefig, plt_reset
 
 plt_reset()
@@ -89,3 +92,4 @@ for idx, ax in enumerate(axs.flat[:df.columns.size]):
 ax.figure.subplots_adjust(hspace=0.8, wspace=0.3)
 ax.figure.tight_layout()
 savefig('distributions.pdf')
+plt.show()

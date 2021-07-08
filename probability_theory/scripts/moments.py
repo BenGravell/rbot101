@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.stats import norm, skewnorm, gennorm
 import matplotlib.pyplot as plt
+import sys
+sys.path.insert(0, '../')
 from utility import savefig, plt_reset
 
 
@@ -54,3 +56,5 @@ for beta in betas:
 fig.legend()
 fig.tight_layout()
 savefig('moment4_comparison.pdf')
+
+plt.show()

@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+sys.path.insert(0, '../')
 from utility import savefig, plt_reset
 
 
@@ -38,3 +40,4 @@ plt.ylabel('density')
 plt.legend()
 plt.tight_layout()
 savefig('function_of_rv.pdf')
+plt.show()

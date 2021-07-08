@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+sys.path.insert(0, '../')
 from utility import savefig, plt_reset
 
 
@@ -35,3 +37,4 @@ plt.legend()
 plt.grid('on')
 plt.tight_layout()
 savefig('standard_gaussian.pdf')
+plt.show()

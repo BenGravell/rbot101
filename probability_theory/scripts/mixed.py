@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+sys.path.insert(0, '../')
 from utility import savefig, plt_reset
 
 
@@ -40,3 +42,4 @@ for pdf, label in zip(pdf_list, label_list):
     plt.grid('on')
     plt.tight_layout()
     savefig('cdf_'+label.lower()+'.pdf')
+plt.show()
