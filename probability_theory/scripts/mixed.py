@@ -36,6 +36,15 @@ pdf_list = [cont_pdf, disc_pdf, mixd_pdf]
 label_list = ['Continuous', 'Discrete', 'Mixed']
 for pdf, label in zip(pdf_list, label_list):
     plt.figure(figsize=figsize)
+    plt.plot(x, pdf, label=label)
+    plt.legend()
+    plt.grid('on')
+    if label in ['Continuous', 'Mixed']:
+        plt.ylim([-0.05, 0.7])
+    plt.tight_layout()
+    savefig('pdf_'+label.lower()+'.pdf')
+
+    plt.figure(figsize=figsize)
     cdf = np.cumsum(pdf*np.diff(x, prepend=x[0]))
     plt.plot(x, cdf, label=label)
     plt.legend()
