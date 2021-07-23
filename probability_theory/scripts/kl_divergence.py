@@ -30,4 +30,4 @@ if lhs <= rhs:
 else:
     print('Triangle inequality fails')
     comp_str = '> '
-print('D(x||y) + D(y||z) = ', lhs, comp_str, rhs, ' = D(x||z)')
+print('D(x||z) = ', lhs, comp_str, rhs, ' = D(x||y) + D(y||z)')
