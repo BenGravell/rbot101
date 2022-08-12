@@ -1,8 +1,8 @@
 # Files for an introduction to probability theory and statistics
 
-- Lecture slides are in the [slides](probability_theory/slides) directory
-- Python scripts are in the [scripts](probability_theory/scripts) directory
-- Python Google Colab notebooks are in the [notebooks](probability_theory/notebooks) directory
+- Lecture slides are in the [slides](slides) directory
+- Python scripts are in the [scripts](scripts) directory
+- Python Google Colab notebooks are in the [notebooks](notebooks) directory
 
 ## Awesome videos
 
